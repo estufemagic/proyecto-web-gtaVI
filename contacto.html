@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090713">
+  <title>Contacto — GTA VI</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .contacto-intro { max-width: 760px; margin: 0 auto 2rem; text-align: center; }
+    .formulario-contacto { max-width: 760px; margin: 0 auto; padding: clamp(1.2rem, 4vw, 2.5rem); border: 1px solid rgb(255 255 255 / 17%); border-radius: 22px; background: linear-gradient(145deg, rgb(24 17 42 / 70%), rgb(8 12 26 / 60%)); box-shadow: 0 18px 50px rgb(0 0 0 / 28%), inset 0 1px rgb(255 255 255 / 8%); }
+    .campos-contacto { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.2rem; }
+    .campo { display: grid; gap: .45rem; }
+    .campo-completo { grid-column: 1 / -1; }
+    .campo label { color: #f3d9ff; font-weight: 750; }
+    .campo input, .campo select, .campo textarea { width: 100%; padding: .85rem 1rem; border: 1px solid rgb(255 255 255 / 22%); border-radius: 12px; outline: none; background: rgb(7 8 19 / 58%); color: white; font: inherit; transition: border-color .2s ease, box-shadow .2s ease; }
+    .campo input::placeholder, .campo textarea::placeholder { color: rgb(255 255 255 / 48%); }
+    .campo select option { color: white; background: #151024; }
+    .campo input:focus, .campo select:focus, .campo textarea:focus { border-color: var(--neon-cyan); box-shadow: 0 0 0 3px rgb(81 229 255 / 15%); }
+    .campo textarea { min-height: 180px; resize: vertical; }
+    .ayuda-campo { color: rgb(255 255 255 / 62%); font-size: .9rem; }
+    .boton-enviar { margin-top: 1.3rem; padding: .85rem 1.4rem; border: 1px solid rgb(255 255 255 / 30%); border-radius: 999px; color: white; background: linear-gradient(100deg, #7c3aed, #c026a8); font: inherit; font-weight: 800; cursor: pointer; box-shadow: 0 0 22px rgb(168 85 247 / 22%); transition: transform .2s ease, box-shadow .2s ease; }
+    .boton-enviar:hover, .boton-enviar:focus-visible { transform: translateY(-2px); box-shadow: 0 0 24px rgb(255 79 216 / 40%); }
+    .aviso-formulario { margin: 1rem 0 0; padding: .9rem 1rem; border-left: 3px solid var(--neon-cyan); border-radius: 0 10px 10px 0; background: rgb(81 229 255 / 8%); color: rgb(255 255 255 / 88%); }
+    .resultado-formulario { margin: 1rem 0 0; padding: 1rem; border: 1px solid rgb(255 79 216 / 42%); border-radius: 12px; background: rgb(50 15 48 / 45%); color: #ffe1f6; }
+    @media (max-width: 620px) { .campos-contacto { grid-template-columns: 1fr; } .campo-completo { grid-column: auto; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Contacto</h1>
+    <nav aria-label="Navegación principal">
+      <a class="neon-hover" href="index.html">Inicio</a>
+      <a class="neon-hover" href="galeria.html">Galería de fotos</a>
+      <a class="neon-hover" href="apartado.html">Apartado técnico</a>
+      <a class="neon-hover" href="contacto.html" aria-current="page">Contacto</a>
+    </nav>
+  </header>
+  <main>
+    <section class="contacto-intro">
+      <h2>¿Quieres consultarme algo?</h2>
+      <p>Si tienes alguna duda sobre la web o quieres dejarme un comentario, puedes escribirlo en este formulario.</p>
+    </section>
+    <form class="formulario-contacto" id="formulario-contacto">
+      <div class="campos-contacto">
+        <div class="campo">
+          <label for="nombre">Nombre</label>
+          <input id="nombre" name="nombre" type="text" autocomplete="name" placeholder="Tu nombre" required>
+        </div>
+        <div class="campo">
+          <label for="correo">Correo electrónico</label>
+          <input id="correo" name="correo" type="email" autocomplete="email" placeholder="tunombre@ejemplo.com" required>
+        </div>
+        <div class="campo">
+          <label for="telefono">Teléfono <span class="ayuda-campo">(opcional)</span></label>
+          <input id="telefono" name="telefono" type="tel" autocomplete="tel" placeholder="Tu número de teléfono">
+        </div>
+        <div class="campo">
+          <label for="tema">¿Sobre qué quieres preguntar?</label>
+          <select id="tema" name="tema" required>
+            <option value="" selected disabled>Elige un tema</option>
+            <option value="gta-vi">GTA VI</option>
+            <option value="web">La página web</option>
+            <option value="otro">Otro tema</option>
+          </select>
+        </div>
+        <div class="campo campo-completo">
+          <label for="comentario">Tu comentario o consulta</label>
+          <textarea id="comentario" name="comentario" maxlength="1500" placeholder="Escribe aquí tu duda o comentario…" required></textarea>
+          <span class="ayuda-campo">Máximo 1500 caracteres.</span>
+        </div>
+      </div>
+      <button class="boton-enviar" type="submit">Enviar consulta</button>
+     
+    </form>
+  </main>
+  <footer><p>Contacto — Web creada por Juan Ignacio Gallego.</p></footer>
+  
+    <script src="script.js"></script>
+  </body>
+</html>
+

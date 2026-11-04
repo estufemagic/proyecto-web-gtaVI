@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090713">
+  <title>Apartado técnico — GTA VI</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .tech-intro { max-width: 850px; margin: 0 auto 3rem; text-align: center; }
+    .tech-label { display: inline-block; padding: .35rem .75rem; border: 1px solid rgb(81 229 255 / 40%); border-radius: 999px; color: #9aefff; background: rgb(8 20 32 / 42%); font-size: .85rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
+    .tech-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr)); gap: 1rem; margin: 1.5rem 0 2.5rem; }
+    .tech-card { padding: 1.35rem; border: 1px solid rgb(255 255 255 / 14%); border-radius: 18px; background: linear-gradient(145deg, rgb(24 17 42 / 68%), rgb(8 12 26 / 55%)); box-shadow: inset 0 1px rgb(255 255 255 / 7%); }
+    .tech-card h3 { margin: .3rem 0 .65rem; color: #ffb3e9; }
+    .tech-card p { margin: .4rem 0; font-size: 1rem; }
+    .tech-icon { display: block; margin-bottom: .5rem; color: #7deaff; font-size: 1.6rem; }
+    .tech-section { margin: 3.5rem 0; }
+    .tech-table-wrap { overflow-x: auto; margin: 1.3rem 0 1rem; border: 1px solid rgb(255 255 255 / 14%); border-radius: 16px; }
+    .tech-table { width: 100%; border-collapse: collapse; min-width: 610px; background: rgb(10 9 24 / 44%); }
+    .tech-table th, .tech-table td { padding: .9rem 1rem; border-bottom: 1px solid rgb(255 255 255 / 10%); text-align: left; vertical-align: top; }
+    .tech-table th { color: #9aefff; background: rgb(81 229 255 / 8%); }
+    .tech-table tr:last-child td { border-bottom: 0; }
+    .tech-flow { display: grid; grid-template-columns: 1fr auto 1fr auto 1fr; align-items: stretch; gap: .7rem; margin: 1.5rem 0; }
+    .tech-flow-item { display: grid; place-items: center; min-height: 110px; padding: 1rem; border: 1px solid rgb(168 85 247 / 38%); border-radius: 16px; background: rgb(22 15 38 / 58%); color: #f3e7ff; text-align: center; font-weight: 750; }
+    .tech-flow-arrow { align-self: center; color: #ff82dc; font-size: 1.5rem; }
+    .tech-note { margin: 1rem 0; padding: 1rem 1.2rem; border-left: 3px solid var(--neon-cyan); border-radius: 0 12px 12px 0; background: rgb(30 37 60 / 52%); color: rgb(255 255 255 / 88%); }
+    .tech-details { margin: 1.5rem 0; border: 1px solid rgb(255 255 255 / 16%); border-radius: 16px; background: rgb(12 9 24 / 48%); }
+    .tech-details summary { padding: 1rem 1.2rem; color: #ffb3e9; font-weight: 800; cursor: pointer; }
+    .tech-details[open] summary { border-bottom: 1px solid rgb(255 255 255 / 12%); }
+    .tech-details ul { padding: 0 1.2rem 1rem 2.5rem; }
+    .tech-sources { padding: 1.3rem; border: 1px solid rgb(255 255 255 / 12%); border-radius: 16px; background: rgb(9 9 22 / 45%); }
+    .tech-sources a { color: #9aefff; }
+    .tech-sources li { margin: .55rem 0; }
+    @media (max-width: 680px) { .tech-flow { grid-template-columns: 1fr; } .tech-flow-arrow { justify-self: center; transform: rotate(90deg); } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Apartado técnico de GTA VI</h1>
+    <nav aria-label="Navegación principal">
+      <a class="neon-hover" href="index.html">Inicio</a>
+      <a class="neon-hover" href="galeria.html">Galería de fotos</a>
+      <a class="neon-hover" href="apartado.html" aria-current="page">Apartado técnico</a>
+      <a class="neon-hover" href="contacto.html">Contacto</a>
+    </nav>
+  </header>
+  <main>
+    <section class="tech-intro">
+      <span class="tech-label">Información técnica: por Juan Ignacio Gallego</span>
+      <h2>¿Qué sabemos de la tecnología de GTA VI?</h2>
+      <p>Rockstar ha confirmado algunos datos de lanzamiento y funciones, especialmente para PS5. GTA VI apunta a llevar la saga a un nuevo nivel visual y técnico. Leonida promete sentirse como un mundo vivo, con ciudades llenas de actividad, carreteras que conectan paisajes muy distintos y escenas que aprovechan la luz, los reflejos y el ambiente de cada lugar. El contraste entre las playas soleadas, las tormentas y los neones de Vice City podría hacer que cada recorrido tenga una personalidad propia..</p>
+    </section>
+
+    <section class="tech-section" aria-labelledby="resumen">
+      <h2 id="resumen">Ficha técnica confirmada</h2>
+      <div class="tech-grid">
+        <article class="tech-card"><span class="tech-icon" aria-hidden="true">▣</span><h3>Plataformas</h3><p>PlayStation 5 y Xbox Series X|S. La versión de Pc no está confirmada.</p></article>
+        <article class="tech-card"><span class="tech-icon" aria-hidden="true">◷</span><h3>Lanzamiento</h3><p>19 de noviembre de 2026, según la información oficial.</p></article>
+        <article class="tech-card"><span class="tech-icon" aria-hidden="true">◎</span><h3>Experiencia</h3><p>Rockstar describe GTA VI como la experiencia para un jugador más inmersiva e impresionante hasta la fecha.</p></article>
+        <article class="tech-card"><span class="tech-icon" aria-hidden="true">▱</span><h3>PS5 Pro</h3><p>La ficha de PlayStation España indica que la versión de PS5 está mejorada para PS5 Pro.</p></article>
+      </div>
+      
+    </section>
+
+    <section class="tech-section" aria-labelledby="carga">
+      <h2 id="carga">Carga del mundo y datos técnicos de rendimiento</h2>
+      <p>La ficha de PS5 explica que GTA VI aprovecha el SSD de alta velocidad de la consola para recorrer Leonida con tiempos de carga «casi instantáneos». También esperamos una simulación más rica de la vida en la ciudad. El tráfico, los peatones y las situaciones que aparecen durante la exploración podrían reaccionar de forma más natural a lo que ocurre alrededor. Si Rockstar consigue combinar esa actividad con un mundo tan amplio, recorrer Leonida podría resultar tan entretenido como seguir la historia principal.</p>
+      <div class="tech-flow" aria-label="Esquema de carga en PS5">
+        <div class="tech-flow-item">SSD de alta velocidad<br><small>PS5</small></div><div class="tech-flow-arrow" aria-hidden="true">→</div>
+        <div class="tech-flow-item">Acceso rápido a los datos<br><small>prestación indicada por PlayStation</small></div><div class="tech-flow-arrow" aria-hidden="true">→</div>
+        <div class="tech-flow-item">Cargas casi instantáneas<br><small>descripción oficial</small></div>
+      </div>
+      <p class="tech-note">El juego ofrecerá un modo que priorice la calidad visual, con una tasa cercana a 30 FPS, y otro que busque una experiencia más fluida, con el objetivo de llegar a 60 FPS en las plataformas que puedan sostenerlo. Es posible que se utilicen resoluciones dinámicas para equilibrar nitidez y rendimiento. En PS5 Pro cabría esperar una imagen más estable o mejoras visuales adicionales.</p>
+    </section>
+
+    <section class="tech-section" aria-labelledby="dualsense">
+      <h2 id="dualsense"> Más inmersión también a través del sonido
+      </h2>
+      <p>La radio, la música y los efectos ambientales ayudarán a dar identidad a cada zona. Los cambios entre el bullicio de Vice City y la calma de las áreas naturales podrían reforzar la sensación de estar recorriendo un estado completo, no solo una sucesión de misiones.:</p>
+      <div class="tech-grid">
+        <article class="tech-card"><span class="tech-icon" aria-hidden="true">〰</span><h3>Respuesta háptica</h3><p>Vibraciones que reaccionan a acciones y factores del entorno del juego, según la descripción oficial.</p></article>
+        <article class="tech-card"><span class="tech-icon" aria-hidden="true">⇣</span><h3>Gatillos adaptativos</h3><p>Resistencia dinámica en los gatillos durante distintas acciones.</p></article>
+        <article class="tech-card"><span class="tech-icon" aria-hidden="true">♫</span><h3>Altavoz integrado</h3><p>Algunos eventos e interacciones se acompañan de efectos de sonido desde el altavoz del mando.</p></article>
+      </div>
+      <p class="tech-note">Un mundo abierto detallado necesita coordinar muchos sistemas a la vez. Es razonable esperar simulación de tráfico y peatones, animaciones que se adapten a las acciones, físicas para los vehículos y respuesta a distintas condiciones del entorno. Los tráilers permiten observar el resultado visual, pero no revelan cómo funcionan por dentro la inteligencia artificial, las colisiones o la física. Por eso, cualquier explicación concreta de esos sistemas debe considerarse una expectativa.</p>
+    </section>
+
+    <section class="tech-section" aria-labelledby="imagen">
+      <h2 id="imagen">Apartado Gráfico</h2>
+      <div class="tech-grid">
+        <article class="tech-card"><h3>Imágenes del juego</h3><p>El material oficial muestra escenas capturadas dentro del juego en PlayStation 5.  A partir de esas imágenes, cabe esperar un sistema de renderizado capaz de representar materiales con distintas propiedades —como superficies mojadas, cristal, metal y piel</p></article>
+        <article class="tech-card"><h3>Un mundo variado</h3><p>El material oficial muestra Vice City y otras zonas de Leonida, con escenas urbanas, costeras y naturales. La combinación de escala, ambiente, tecnología y libertad podría hacer que cada visita a Leonida ofrezca algo nuevo.</p></article>
+        
+      </div>
+      <details class="tech-details">
+        <summary>¿Qué cifras gráficas faltan por anunciar?</summary>
+        <ul>
+          <li>Resolución objetivo en cada consola.</li>
+          <li>FPS y modos de rendimiento o calidad.</li>
+          <li>Uso concreto de trazado de rayos y otras técnicas de iluminación.</li>
+          <li>Requisitos mínimos o recomendados para PC y una posible fecha de esa versión.</li>
+        </ul>
+      </details>
+    </section>
+
+    <section class="tech-section" aria-labelledby="audio">
+      <h2 id="audio">Radio y música</h2>
+      <p>La web oficial de GTA VI presenta la radio del juego, la banda sonora y la música original como partes de la experiencia. Rockstar también anunció música original de Justice y publicó información sobre emisoras de radio. En PS5, algunos sonidos pueden complementarse con el altavoz integrado del DualSense.</p>
+      <div class="tech-grid">
+        <article class="tech-card"><h3>Radio del juego</h3><p>Emisoras para acompañar los recorridos por Vice City y Leonida.</p></article>
+        <article class="tech-card"><h3>Banda sonora</h3><p>Selección musical asociada al mundo y al tono del juego.</p></article>
+        <article class="tech-card"><h3>Música original</h3><p>Rockstar anunció una partitura original de Justice.</p></article>
+      </div>
+    </section>
+
+   
+    <section class="tech-sources" aria-labelledby="fuentes">
+      <h2 id="fuentes">Fuentes oficiales</h2>
+      <ul>
+        <li><a href="https://www.rockstargames.com/VI" target="_blank" rel="noopener noreferrer">Rockstar Games: página oficial de GTA VI</a></li>
+        <li><a href="https://www.playstation.com/es-es/games/grand-theft-auto-vi/" target="_blank" rel="noopener noreferrer">PlayStation España: funciones y ficha de PS5</a></li>
+        <li><a href="https://www.rockstargames.com/VI/an-extended-look" target="_blank" rel="noopener noreferrer">Rockstar Games: An Extended Look</a></li>
+        <li><a href="https://www.rockstargames.com/newswire/" target="_blank" rel="noopener noreferrer">Rockstar Newswire: anuncios y actualizaciones</a></li>
+      </ul>
+      <p><small> Recomiendo Visitar estas webs, de ahí saqué toda la información oficial sobre el juego.</small></p>
+    </section>
+  </main>
+  <footer><p>Apartado técnico para la asignatura de Informática. Juan Ignacio Gallego — 2026</p></footer>
+    <script src="script.js"></script>
+  </body>
+</html>
+
+

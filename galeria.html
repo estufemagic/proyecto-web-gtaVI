@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link type="text/css" rel="stylesheet" href="style.css"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090713">
+  <title>Galería — GTA VI</title>
+  <style>
+    .galeria-intro { max-width: 760px; margin: 0 auto 3rem; text-align: center; }
+    .galeria-seccion { margin: 3rem 0 4rem; }
+    .galeria-seccion h2 { margin-top: 0; }
+    .galeria-seccion .carrusel-era { max-width: 960px; }
+    .galeria-seccion .carrusel-enlace { height: clamp(320px, 48vw, 560px); }
+    .galeria-vacia { display: grid; place-items: center; background: radial-gradient(ellipse at 50% 30%, rgb(255 79 216 / 20%), transparent 55%), linear-gradient(145deg, #211637, #0d1022); }
+    .galeria-vacia img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+    .galeria-vacia span { position: absolute; z-index: 2; right: 0; bottom: 0; left: 0; padding: 1rem; background: linear-gradient(transparent, rgb(0 0 0 / 82%)); color: rgb(255 255 255 / 88%); text-align: center; }
+    @media (prefers-reduced-motion: reduce) { .carrusel-pista { transition: none; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Galería de fotos</h1>
+    <nav aria-label="Navegación principal">
+      <a class="neon-hover" href="index.html">Inicio GTA VI</a>
+      <a class="neon-hover" href="galeria.html" aria-current="page">Galería de fotos</a>
+      <a class="neon-hover" href="apartado.html">Apartado técnico</a>
+      <a class="neon-hover" href="contacto.html">Contacto</a>
+    </nav>
+  </header>
+  <main>
+    <section class="galeria-intro">
+      <h2>Explora mi selección de imagenes</h2>
+      <p>Para mostrar tus fotos, sustituye el valor de <code>src</code> en cada imagen por la URL directa de la imagen (por ejemplo, terminada en .jpg, .png o .webp). Cambia también su texto <code>alt</code> y el pie de foto.</p>
+      <p>Bienvenidos a esta galería dedicada a GTA VI. En las imágenes que he seleccionado podremos recorrer Leonida, un estado inspirado en Florida, y descubrir lugares como Vice City, sus playas, carreteras y zonas naturales. La galería reúne algunos de los paisajes y personajes que formaran esta nueva aventura de Rockstar Games..</p>
+    </section>
+      <section class="galeria-seccion" aria-labelledby="titulo-carrete-1">
+        <h2 id="titulo-carrete-1">Ciudad y su Paisaje</h2>
+        <p>La historia de GTA VI transcurre en Leonida, un estado ficticio cuyo lugar más conocido es Vice City, una ciudad de luces de neón, playas y barrios muy distintos entre sí. Pero el mundo del juego no se limita a la ciudad: Rockstar también ha presentado lugares como Leonida Keys, Port Gellhorn, Ambrosia, Grassrivers y el parque nacional Mount Kalaga. Estos escenarios muestran paisajes muy diferentes, una ciudad viva y detallada al extremo, y una naturaleza y costas increíbles.</p>
+
+        <div class="carrusel-era" aria-label="Carrusel: título del carrete 1" tabindex="0">
+          <div class="carrusel-ventana"><div class="carrusel-pista">
+          <div class="carrusel-enlace galeria-vacia" role="group" aria-label="imagen 1">
+            <img src="https://www.xtrafondos.com/wallpapers/ciudad-de-gta-6-12064.jpg" alt="Imagen 1"><span>Paisaje urbano de una carretera de Leonida</span>
+          </div>          <div class="carrusel-enlace galeria-vacia" role="group" aria-label="Imagen 2 del carrete 1">
+            <img src="https://www.adslzone.net/app/uploads-adslzone.net/2026/03/GTA-6-Vice-City-1.jpg" alt="Imagen 2"><span>Zona costera de las Leonida Keys</span>
+          </div>          <div class="carrusel-enlace galeria-vacia" role="group" aria-label="Imagen 3 del carrete 1">
+            <img src="https://www.notebookcheck.org/fileadmin/Notebooks/News/_nc5/gta-6-vice-vity.jpg" alt="Imagen 3"><span>Vista aerea de Vice City</span>
+          </div>          </div></div>
+          <div class="carrusel-controles"><button type="button" class="anterior" aria-label="Foto anterior">‹</button><span class="carrusel-indicador" aria-live="polite">1 / 3</span><button type="button" class="siguiente" aria-label="Foto siguiente">›</button></div>
+        </div>
+      </section>      <section class="galeria-seccion" aria-labelledby="titulo-carrete-2">
+        <h2 id="titulo-carrete-2">Protagonistas</h2> <p>Los protagonistas son Jason Duval y Lucia Caminos. Jason pasó por el ejército y ahora trabaja para narcotraficantes locales en los Cayos. Lucia acaba de salir de prisión y quiere mejorar su vida. Ambos tendrán que confiar el uno en el otro cuando un golpe aparentemente sencillo sale mal. El juego nos presenta su relación sentimental, innovando al ofrecernos esta perspectiva en la que controlaremos a ambos.
+          Entre los personajes secundarios que conocemos destaca Cal Hampton, amigo de Jason, un hermitaño de ordenador que le ayudará a lo largo de la historia.</p>
+        <div class="carrusel-era" aria-label="Carrusel: título del carrete 2" tabindex="0">
+          <div class="carrusel-ventana"><div class="carrusel-pista">
+          <div class="carrusel-enlace galeria-vacia" role="group" aria-label="Imagen 1 del carrete 2">
+            <img src="https://4kwallpapers.com/images/wallpapers/jason-gta-6-2560x1440-22309.jpg" alt="Imagen 1"><span>Jason Duval</span>
+          </div>          <div class="carrusel-enlace galeria-vacia" role="group" aria-label="Imagen 2 del carrete 2">
+            <img src="https://fotografias-2.larazon.es/assets/2026/09/gta-vi-lucia-caminos-fiesta.jpg?width=1900&height=1069"><span>Lucia Caminos</span>
+          </div>          <div class="carrusel-enlace galeria-vacia" role="group" aria-label="Imagen 3 del carrete 2">
+            <img src="https://sm.ign.com/ign_es/gallery/g/gta-6-cal-/gta-6-cal-hampton-screenshots_nqqa.jpg" alt="Imagen 3"><span>Cal Hampton</span>
+          </div>          </div></div>
+          <div class="carrusel-controles"><button type="button" class="anterior" aria-label="Foto anterior">‹</button><span class="carrusel-indicador" aria-live="polite">1 / 3</span><button type="button" class="siguiente" aria-label="Foto siguiente">›</button></div>
+        </div>
+      </section>      <section class="galeria-seccion" aria-labelledby="titulo-carrete-3">
+        <h2 id="titulo-carrete-3">¿Qué sabemos hasta ahora de la historia?</h2>
+        <p>Rockstar ha adelantado que Jason y Lucia conocen bien las dificultades de la vida. Después de que un golpe salga mal, ambos quedan envueltos en una conspiración criminal que se extiende por Leonida. Para salir adelante tendrán que apoyarse mutuamente. La historia parece combinar crimen, ambición y la relación entre sus protagonistas, aunque todavía conviene evitar dar por completamente ciertos algunos detalles de la trama que Rockstar no haya confirmado.  </p>
+        <div class="carrusel-era" aria-label="Carrusel: título del carrete 3" tabindex="0">
+          <div class="carrusel-ventana"><div class="carrusel-pista">
+          <div class="carrusel-enlace galeria-vacia" role="group" aria-label="Imagen 1 del carrete 3">
+            <img src="https://files.vgtimes.com/gallery/thumb/140645/8592026507_brian_heder_04.webp" alt="Imagen 1"><span>Una de las historias más esperadas en la industria</span>
+          </div>          <div class="carrusel-enlace galeria-vacia" role="group" aria-label="Imagen 2 del carrete 3">
+            <img src="https://gaming-cdn.com/images/news/articles/12289/image/708x398/echa-un-vistazo-a-docenas-de-imagenes-nuevas-de-gta-vi-image681a1fc7a8d9c.jpg" alt="Imagen 2"><span>Sabemos que la música tendra mucho que ver en la historia</span>
+          </div>          <div class="carrusel-enlace galeria-vacia" role="group" aria-label="Imagen 3 del carrete 3">
+            <img src="https://sm.ign.com/ign_es/photo/9/99-details/99-details-from-the-gta-6-extended-look_ddvb.jpg" alt="Imagen 3"><span>los Atracos seguirán siendo parte importante de la historia</span>
+          </div>          </div></div>
+          <div class="carrusel-controles"><button type="button" class="anterior" aria-label="Foto anterior">‹</button><span class="carrusel-indicador" aria-live="polite">1 / 3</span><button type="button" class="siguiente" aria-label="Foto siguiente">›</button></div>
+        </div>
+      </section>      <section class="galeria-seccion" aria-labelledby="titulo-carrete-4">
+        <h2 id="titulo-carrete-4"><h2>Expectativas y Filtraciones</h2> <p> El desarollo de gta VI está marcado por filtraciones históricas y una expectativa sin precedentes en la cultura popular. En 2022, sufrió la mayor filtración de la historia de los videojuegos cuando un hacker difundió más de 90 videos del desarrollo temprano. Este suceso confirmó el regreso a una Vice City moderna y presentó a sus dos protagonistas inspirados en Bonnie y Clyde: Jason y Lucia, la primera mujer controlable de la era moderna de la saga. El caos de los leaks se repitió en 2023, cuando el tráiler oficial se filtró en redes sociales horas antes de su estreno, obligando a Rockstar a publicarlo anticipadamente; aun así, rompió récords mundiales con más de 90 millones de vistas en un solo día.    Este nivel de hype astronómico se debe a una espera de más de una década desde el lanzamiento de GTA V, sumado a la promesa de un salto técnico revolucionario en fotorrealismo e inteligencia artificial. El juego promete ser una sátira mordaz de la sociedad actual, fuertemente enfocada en la cultura de las redes sociales, los videos virales y la vida en Florida. Con la incógnita de cómo evolucionará su masivo modo multijugador online, GTA VI no es solo el lanzamiento más esperado del sector, sino que está perfilado para convertirse en el evento cultural y de entretenimiento más grande de la década. </p>
+        <div class="carrusel-era" aria-label="Carrusel: título del carrete 4" tabindex="0">
+          <div class="carrusel-ventana"><div class="carrusel-pista">
+          <div class="carrusel-enlace galeria-vacia" role="group" aria-label="Imagen 1 del carrete 4">
+            <img src="https://s1.cdn.autoevolution.com/images/news/historic-gta-6-leak-shows-the-game-is-set-in-vice-city-gameplay-looks-awesome-198927_1.jpg" alt="Imagen 1"><span>Internet se llenó de filtraciones sobre versiones de desarrollo del juego</span>
+          </div>          <div class="carrusel-enlace galeria-vacia" role="group" aria-label="Imagen 2 del carrete 4">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgZKxJeyf1JEpx9-Z6Y8jfpvLW3caPGFAZMn_WrkVKGV8kcF199LzaU9zb&s=10" alt="Imagen 2"><span>Mapa del próximo gta VI comparado con gta V</span>
+          </div>          <div class="carrusel-enlace galeria-vacia" role="group" aria-label="Imagen 3 del carrete 4">
+            <img src="https://preview.redd.it/gta-6-will-exceed-our-expectations-v0-a7bmxvnrdg7e1.jpeg?auto=webp&s=3ed445d8867924e5cfd49aa472758c5e597a7bb6" alt="Imagen 3"><span>el costo de desarollo de gta VI supera a todos los anteriores juntos</span>
+          </div>          </div></div>
+          <div class="carrusel-controles"><button type="button" class="anterior" aria-label="Foto anterior">‹</button><span class="carrusel-indicador" aria-live="polite">1 / 3</span><button type="button" class="siguiente" aria-label="Foto siguiente">›</button></div>
+        </div>
+      </section>      <section class="galeria-seccion" aria-labelledby="titulo-carrete-5">
+        <h2 id="titulo-carrete-5">Resumen gta VI</h2> <p> Leonida reúne ciudades, costas y espacios naturales para servir de escenario a una nueva historia de crimen y supervivencia. Mientras esperamos el lanzamiento, las imágenes oficiales permiten conocer poco a poco sus lugares y personajes. Esta galería es una invitación a recorrer ese mundo y a distinguir lo que Rockstar ha confirmado de todo lo que todavía son teorías. </p>
+        <div class="carrusel-era" aria-label="Carrusel: título del carrete 5" tabindex="0">
+          <div class="carrusel-ventana"><div class="carrusel-pista">
+          <div class="carrusel-enlace galeria-vacia" role="group" aria-label="Imagen 1 del carrete 5">
+            <img src="https://begamers.com/sites/default/files/2026-06/GTA%20VI_0.jpg" alt="Imagen 1"><span>gta VI es considerado el juego con mayor expectación de la historia</span>
+          </div>          <div class="carrusel-enlace galeria-vacia" role="group" aria-label="Imagen 2 del carrete 5">
+            <img src="https://image.api.playstation.com/vulcan/ap/rnd/202505/0616/242b637ff99d939c66e2a66ac7ed703871d8178a5321d5dc.jpg" alt="Imagen 2"><span>Promete ser la ciudad más viva jamas desarrollada</span>
+          </div>          <div class="carrusel-enlace galeria-vacia" role="group" aria-label="Imagen 3 del carrete 5">
+            <img src="https://imagenes.hobbyconsolas.com/files/image_640_360/uploads/imagenes/2026/08/27/6a9095a71a7425-02214570.jpeg" alt="Imagen 3"><span> Se trata de la primera vez que controlamos a una pareja</span>
+          </div>          </div></div>
+          <div class="carrusel-controles"><button type="button" class="anterior" aria-label="Foto anterior">‹</button><span class="carrusel-indicador" aria-live="polite">1 / 3</span><button type="button" class="siguiente" aria-label="Foto siguiente">›</button></div>
+        </div>
+      </section>
+  </main>
+  <footer><p>Galería creada para la asignatura de Informática. Juan Ignacio Gallego — 2026</p></footer>
+    <script src="script.js"></script>
+  </body>
+</html>
+
+
